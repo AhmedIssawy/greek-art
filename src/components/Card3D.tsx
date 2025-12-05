@@ -94,16 +94,6 @@ export default function Card3D({ position, title, frontText, backText, color }: 
           {frontText}
         </Text>
 
-        <Text
-          position={[0, -0.8, 0.06]}
-          fontSize={0.16}
-          color="#a0a0a0"
-          anchorX="center"
-          anchorY="middle"
-        >
-          Click to see details
-        </Text>
-
         {/* Decorative elements */}
         <mesh position={[0, -0.5, 0.06]}>
           <boxGeometry args={[3, 0.01, 0.01]} />
@@ -141,15 +131,7 @@ export default function Card3D({ position, title, frontText, backText, color }: 
           {backText}
         </Text>
 
-        <Text
-          position={[0, -1.1, 0.06]}
-          fontSize={0.16}
-          color="#a0a0a0"
-          anchorX="center"
-          anchorY="middle"
-        >
-          Click to flip back
-        </Text>
+        
       </group>
       {/* Shadow catcher plane */}
       {/* Shadow catcher plane */}

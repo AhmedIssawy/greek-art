@@ -29,7 +29,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(15, 15, 30, 0.6);
+  background: linear-gradient(135deg, rgba(10, 37, 64, 0.7) 0%, rgba(0, 0, 0, 0.6) 100%);
   z-index: 1;
 }
 
@@ -139,7 +139,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(10, 37, 64, 0.7);
+  background: rgba(0, 0, 0, 0.3);
   z-index: 0;
 }
 

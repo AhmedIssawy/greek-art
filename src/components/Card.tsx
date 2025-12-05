@@ -19,18 +19,22 @@ export default function Card({ title, frontText, backText, color }: CardProps) {
     <div className="card-wrapper" onClick={handleClick}>
       <div className={`card ${isFlipped ? 'flipped' : ''}`}>
         {/* Front Side */}
-        <div className="card-face card-front" style={{ background: color }}>
-          <h2 className="card-title">{title}</h2>
-          <p className="card-front-text">{frontText}</p>
-          <div className="card-divider"></div>
-          <span className="card-hint">Click to see details</span>
+        <div className="card-face card-front" style={{ backgroundImage: 'url(/card1.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+          <div className="card-overlay"></div>
+          <div className="card-content">
+            <h2 className="card-title">{title}</h2>
+            <p className="card-front-text">{frontText}</p>
+            <div className="card-divider"></div>
+          </div>
         </div>
 
         {/* Back Side */}
-        <div className="card-face card-back" style={{ background: color }}>
-          <h2 className="card-title">{title}</h2>
-          <p className="card-back-text">{backText}</p>
-          <span className="card-hint">Click to flip back</span>
+        <div className="card-face card-back" style={{ backgroundImage: 'url(/card1.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+          <div className="card-overlay"></div>
+          <div className="card-content">
+            <h2 className="card-title">{title}</h2>
+            <p className="card-back-text">{backText}</p>
+          </div>
         </div>
       </div>
     </div>
