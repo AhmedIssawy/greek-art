@@ -12,9 +12,11 @@ export default function HeroSection() {
             From the depths of innovation rises a platform that commands respect and delivers results. 
             Join the pantheon of satisfied clients who have harnessed legendary performance.
           </p>
-          <button className="hero-cta">
-            Explore Packages
-          </button>
+          <a href="https://ahmedissawy.engineer" target="_blank" rel="noopener noreferrer" className="hero-cta-link">
+            <button className="hero-cta">
+              Explore Packages
+            </button>
+          </a>
         </div>
 
         <div className="hero-image-container">

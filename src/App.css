@@ -78,6 +78,11 @@
   line-height: 1.8;
 }
 
+.hero-cta-link {
+  text-decoration: none;
+  display: inline-block;
+}
+
 .hero-cta {
   padding: 1rem 2.5rem;
   font-size: 1.1rem;
@@ -91,7 +96,7 @@
   box-shadow: 0 10px 30px rgba(255, 215, 0, 0.4);
 }
 
-.hero-cta:hover {
+.hero-cta-link:hover .hero-cta {
   transform: translateY(-3px);
   box-shadow: 0 15px 40px rgba(255, 215, 0, 0.6);
   background: linear-gradient(135deg, #FFA500 0%, #FFD700 100%);
