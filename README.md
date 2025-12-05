@@ -4,4 +4,4 @@
 
 Welcome to this greek art repository. This folder contains resources and documentation for 3D modeling and visualization.
 
-USE IT FOR ANY STUNNING LANDING PAGE JUST CHANGE PHOTOS AND TITLES
+USE IT FOR ANY STUNNING LANDING PAGE JUST CHANGE PHOTOS AND TITLES {{{{{ UPLOAD PHOTOS TO ANY CDN THIS REPO IS NOT PROD READY WITH OUT IT }}}}}
