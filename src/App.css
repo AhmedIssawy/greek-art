@@ -18,7 +18,7 @@
   height: 100vh;
   min-height: 700px;
   position: relative;
-  background: url('/back1.jpg') center/cover no-repeat;
+  background: url('https://res.cloudinary.com/dmtdjxpwt/image/upload/v1764976627/back1_dkomcj.avif') center/cover no-repeat;
   overflow: hidden;
 }
 

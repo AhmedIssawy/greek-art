@@ -21,7 +21,7 @@ export default function HeroSection() {
 
         <div className="hero-image-container">
           <img 
-            src="/Adobe Express - file.png" 
+            src="https://res.cloudinary.com/dmtdjxpwt/image/upload/v1764976436/Adobe_Express_-_file_2_yqktbf.avif" 
             alt="Poseidon - God of the Sea" 
             className="hero-image"
             loading="lazy"
