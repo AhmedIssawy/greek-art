@@ -18,7 +18,7 @@ export default function Card3D({ position, title, frontText, backText, color }: 
   const [isHovered, setIsHovered] = useState(false);
   const targetRotation = useRef(0);
 
-  useFrame((state, delta) => {
+  useFrame((_state, delta) => {
     if (groupRef.current) {
       // Smooth rotation animation
       const currentRotation = groupRef.current.rotation.y;
@@ -70,7 +70,7 @@ export default function Card3D({ position, title, frontText, backText, color }: 
       </RoundedBox>
 
       {/* Front Side Content */}
-      <group visible={!isFlipped || groupRef.current?.rotation.y < Math.PI / 2}>
+      <group visible={!isFlipped || (groupRef.current?.rotation.y ?? 0) < Math.PI / 2}>
         <Text
           position={[0, 0.8, 0.06]}
           fontSize={0.4}
@@ -104,7 +104,7 @@ export default function Card3D({ position, title, frontText, backText, color }: 
       {/* Back Side Content */}
       {/* Back Side Content */}
       <group 
-        visible={isFlipped && groupRef.current?.rotation.y >= Math.PI / 2}
+        visible={isFlipped && (groupRef.current?.rotation.y ?? 0) >= Math.PI / 2}
         rotation={[0, Math.PI, 0]}
       >
         <Text

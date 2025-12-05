@@ -5,20 +5,17 @@ export default function CardsSection() {
     {
       title: "Starter Plan",
       frontText: "Perfect for beginners",
-      backText: "Includes basic features, 24/7 support, easy setup wizard, 10GB storage, and access to community resources. Get started in minutes!",
-      color: "linear-gradient(135deg, #20B2AA 0%, #1a8f88 100%)"
+      backText: "Includes basic features, 24/7 support, easy setup wizard, 10GB storage, and access to community resources. Get started in minutes!"
     },
     {
       title: "Pro Plan",
       frontText: "For growing teams",
-      backText: "Advanced features, real-time analytics, priority support, 100GB storage, custom integrations, and advanced security. Scale with confidence!",
-      color: "linear-gradient(135deg, #4682B4 0%, #3a6a94 100%)"
+      backText: "Advanced features, real-time analytics, priority support, 100GB storage, custom integrations, and advanced security. Scale with confidence!"
     },
     {
       title: "Enterprise Plan",
       frontText: "Ultimate solution",
-      backText: "Full customization, dedicated account manager, unlimited storage, premium tools, SLA guarantee, and white-label options. Enterprise-grade power!",
-      color: "linear-gradient(135deg, #FFD700 0%, #e6c200 100%)"
+      backText: "Full customization, dedicated account manager, unlimited storage, premium tools, SLA guarantee, and white-label options. Enterprise-grade power!"
     }
   ];
 
@@ -38,7 +35,6 @@ export default function CardsSection() {
             title={card.title}
             frontText={card.frontText}
             backText={card.backText}
-            color={card.color}
           />
         ))}
       </div>

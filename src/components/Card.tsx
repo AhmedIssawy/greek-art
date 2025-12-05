@@ -5,10 +5,9 @@ interface CardProps {
   title: string;
   frontText: string;
   backText: string;
-  color: string;
 }
 
-export default function Card({ title, frontText, backText, color }: CardProps) {
+export default function Card({ title, frontText, backText }: CardProps) {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleClick = () => {

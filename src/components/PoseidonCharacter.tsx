@@ -1,6 +1,6 @@
 import { useRef, useMemo } from 'react';
 import { useFrame } from '@react-three/fiber';
-import { MeshStandardMaterial, Mesh, Group } from 'three';
+import { Group } from 'three';
 import * as THREE from 'three';
 
 export default function PoseidonCharacter() {
@@ -261,9 +261,7 @@ export default function PoseidonCharacter() {
         <bufferGeometry>
           <bufferAttribute
             attach="attributes-position"
-            count={particles.length / 3}
-            array={particles}
-            itemSize={3}
+            args={[particles, 3]}
           />
         </bufferGeometry>
         <pointsMaterial
